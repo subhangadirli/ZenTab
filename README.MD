@@ -2,8 +2,6 @@
 
 > A minimal, instant-loading new tab extension for Firefox — built for focus, not distraction.
 
-![ZenTab Preview](assets/preview.png)
-
 ---
 
 ## Features
