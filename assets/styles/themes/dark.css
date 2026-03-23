@@ -1,0 +1,20 @@
+:root {
+  /* Sanctuary Dark Theme */
+  --bg-color-top: #0e0e18;
+  --bg-color-bottom: #12121f;
+  --bg-gradient: linear-gradient(to bottom, var(--bg-color-top), var(--bg-color-bottom));
+  
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-faint: rgba(255, 255, 255, 0.3);
+
+  --search-bg: rgba(255, 255, 255, 0.03);
+  --search-border: rgba(255, 255, 255, 0.05);
+
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --card-hover-bg: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.04);
+  --card-border-hover: rgba(255, 255, 255, 0.08);
+
+  --status-nominal: #10b981; /* green dot */
+}
