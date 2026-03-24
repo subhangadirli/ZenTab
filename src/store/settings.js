@@ -4,7 +4,7 @@ export const ext = (typeof browser !== 'undefined' ? browser : chrome);
 // Default settings
 export const DEFAULT_SETTINGS = {
   clock24h: true,
-  searchEngine: 'google', // 'google', 'duckduckgo', 'bing'
+  searchEngine: 'default', // 'default', 'google', 'duckduckgo', 'bing'
   showStatus: true,
   showQuote: true,
   quickLinks: [

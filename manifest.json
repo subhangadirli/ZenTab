@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "ZenTab",
-  "version": "1.0.4",
+  "version": "v0.2b",
   "description": "Minimal, dark aesthetic dashboard",
-  "author": "Sanctuary",
+  "author": "Subhan Gadirli",
   "chrome_url_overrides": {
     "newtab": "src/newtab/newtab.html"
   },
@@ -16,7 +16,7 @@
     "service_worker": "src/background/background.js",
     "type": "module"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "search"],
   "icons": {
     "16": "assets/icons/icon-16.png",
     "48": "assets/icons/icon-48.png",

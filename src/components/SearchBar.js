@@ -45,9 +45,18 @@ export function init(container, settings) {
   // Submit search
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-      const query = encodeURIComponent(input.value.trim());
-      if (!query) return;
-      
+      const queryText = input.value.trim();
+      if (!queryText) return;
+
+      // Respect default search engine if supported
+      if (settings.searchEngine === 'default' && typeof chrome !== 'undefined' && chrome.search) {
+        chrome.search.query({ text: queryText, disposition: 'CURRENT_TAB' });
+        input.value = '';
+        input.blur();
+        return;
+      }
+
+      const query = encodeURIComponent(queryText);
       let searchUrl = `https://www.google.com/search?q=${query}`;
       if (settings.searchEngine === 'duckduckgo') {
         searchUrl = `https://duckduckgo.com/?q=${query}`;
